@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block meta %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    {% block favicon %}
+    <link rel="icon" href="http://kdt-static.qiniucdn.com/v2/image/yz_fc.ico">
+    {% endblock %}
+
+    {% block common_css %}
+    <link rel="stylesheet" type="text/css" href="/public/www/vendor/Semantic-UI/dist/semantic.min.css">
+    {% endblock %}
+    
+    {% block page_css %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+
+    {% block page_js %}{% endblock %}
+</body>
+</html>
