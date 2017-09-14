@@ -3,38 +3,26 @@
 #### build
 
 ```bash
-make watch-js
-make watch-css
-make build-js
-make build-css
-make build
-make start-server
+make pre
 ```
 
 #### project folder structure
 
 ```
 |-server
-|  |-api
-|  |  |-qima
-|  |     |-controllers
-|  |     |-models
-|  |     |-dao
-|  |-www
-|  |  |-common
-|  |  |  |-views
-|  |  |
-|  |  |-qima
-|  |  |  |-controllers
-|  |  |  |-services
-|  |  |  |-views
-|  |  | 
-|  |  |-bbs
-|  |  |  |-controllers
-|  |  |  |-services
-|  |  |  |-views
-|  |
-|  |-wap
+|  |-config
+|  |-lib
+|  |-middlewares
+|  |-public
+|  |-src
+|     |-common
+|     |   |-views
+|     |       |-base.html
+|     |-home
+|         |-controllers
+|         |-services
+|         |-views
+|  |-app.js
 |
 |-client
 |  |-www
@@ -59,13 +47,6 @@ make start-server
 |  |  |-vendor
 |  |  |-bower.json
 |
-|-lib
-|-config
-|  |-db.js
-|  |-router.js
-|
-|-app.js
-|-router.js
 |-gulpfile.js
 |-Makefile
 |-package.json
